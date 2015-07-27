@@ -18,7 +18,7 @@ use Carton::Error;
 
 use constant { SUCCESS => 0, INFO => 1, WARN => 2, ERROR => 3 };
 
-our $UseSystem = 0; # 1 for unit testing
+our $UseSystem = $ENV{PERL_CARTON_USESYSTEM}// 0; # 1 for unit testing
 
 use Class::Tiny {
     verbose => undef,
@@ -383,7 +383,8 @@ sub cmd_exec {
     # PERL5LIB takes care of arch
     my $path = $env->install_path;
     local $ENV{PERL5LIB} = "$path/lib/perl5";
-    local $ENV{PATH} = "$path/bin:$ENV{PATH}";
+    my $PATHSEP = $^O eq 'MSWin32' ? ';' : ':';
+    local $ENV{PATH} = "$path/bin${PATHSEP}$ENV{PATH}";
 
     if ($UseSystem) {
         system @args;

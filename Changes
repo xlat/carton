@@ -1,6 +1,8 @@
 Revision history for carton
 
 {{$NEXT}}
+        - fix Windows path in cmd_exec
+        - add PERL_CARTON_USESYSTEM environment variable to initialize $Carton::CLI::UseSystem
 
 v1.0.21  2015-05-15 12:21:47 PDT
         - Changed Module::Reader dependency to requires for now, since it will be required

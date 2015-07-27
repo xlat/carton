@@ -1,10 +1,10 @@
 {
-   "abstract" : "Perl module dependency manager (aka Bundler for Perl)",
+   "abstract" : "Perl module dependency manager (aka Bundler for Perl) ",
    "author" : [
       "Tatsuhiko Miyagawa"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.036, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.150001",
+   "generated_by" : "Dist::Zilla version 5.036, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.142060",
    "license" : [
       "perl_5"
    ],
@@ -65,16 +65,16 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/perl-carton/carton/issues"
+         "web" : "https://github.com/xlat/carton/issues"
       },
-      "homepage" : "https://github.com/perl-carton/carton",
+      "homepage" : "https://github.com/xlat/carton",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/perl-carton/carton.git",
-         "web" : "https://github.com/perl-carton/carton"
+         "url" : "https://github.com/xlat/carton.git",
+         "web" : "https://github.com/xlat/carton"
       }
    },
-   "version" : "v1.0.21",
+   "version" : "v1.0.21.1",
    "x_contributors" : [
       "Christian Walde <walde.christian@googlemail.com>",
       "David Golden <dagolden@cpan.org>",
